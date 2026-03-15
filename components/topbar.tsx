@@ -1,13 +1,8 @@
 "use client"
 
 import Image from "next/image"
-import { Menu } from "lucide-react"
 
-interface TopbarProps {
-  onMenuClick?: () => void
-}
-
-export function Topbar({ onMenuClick }: TopbarProps) {
+export function Topbar() {
   return (
     <header className="lg:-mx-7 sticky top-0 z-30 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border mb-6 rounded-xl lg:rounded-none">
       <div className="flex items-center justify-start gap-3 px-4 py-4 md:px-7">
@@ -31,14 +26,6 @@ export function Topbar({ onMenuClick }: TopbarProps) {
             </div>
           </div>
         </div>
-
-        <button
-          onClick={onMenuClick}
-          className="lg:hidden rounded-full p-2 hover:bg-muted focus:outline-none focus:ring-2"
-          aria-label="Open menu"
-        >
-          <Menu className="size-5" />
-        </button>
       </div>
     </header>
   )

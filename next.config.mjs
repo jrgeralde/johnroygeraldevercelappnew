@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 const repoName = 'smart-home-dashboard';
+const isGitHubPages =
+  process.env.DEPLOY_TARGET === 'github-pages' ||
+  process.env.GITHUB_PAGES === 'true';
 
-const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
@@ -9,11 +11,13 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  output: 'export',
-  ...(isProd ? {
-    basePath: `/${repoName}`,
-    assetPrefix: `/${repoName}/`,
-  } : {}),
+  ...(isGitHubPages
+    ? {
+        output: 'export',
+        basePath: `/${repoName}`,
+        assetPrefix: `/${repoName}/`,
+      }
+    : {}),
 };
 
 export default nextConfig;

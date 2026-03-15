@@ -1,10 +1,22 @@
 "use client"
 
-import { Github, Home, Linkedin, Mail, Youtube } from "lucide-react"
+import { FileDown, Github, Home, Linkedin, Mail, Youtube } from "lucide-react"
 import { useState } from "react"
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog"
 
 export function WelcomeCard() {
   const [playKey, setPlayKey] = useState(0)
+  const [cvDialogOpen, setCvDialogOpen] = useState(false)
 
   return (
     <div className="relative overflow-hidden rounded-3xl bg-sidebar-gradient px-6 pb-6 pt-4 text-white transform hover:scale-105 transition-transform duration-200">
@@ -89,6 +101,43 @@ export function WelcomeCard() {
                 </div>
               )}
             </div>
+            <AlertDialog open={cvDialogOpen} onOpenChange={setCvDialogOpen}>
+              <AlertDialogTrigger asChild>
+                <button
+                  type="button"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-white/10 px-4 py-2 text-center font-semibold hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white/60"
+                  aria-label="Download My CV"
+                >
+                  <FileDown className="size-5 shrink-0" aria-hidden />
+                  <span>Download My CV</span>
+                </button>
+              </AlertDialogTrigger>
+              <AlertDialogContent>
+                <AlertDialogHeader>
+                  <AlertDialogTitle>Download CV?</AlertDialogTitle>
+                  <AlertDialogDescription>
+                    Download JohnRoyGeraldeResumeWithPortfolio.pdf to your device.
+                  </AlertDialogDescription>
+                </AlertDialogHeader>
+                <AlertDialogFooter>
+                  <AlertDialogCancel>Cancel</AlertDialogCancel>
+                  <AlertDialogAction
+                    onClick={() => {
+                      const href = "/assets/JohnRoyGeraldeResumeWithPortfolio.pdf"
+                      const anchor = document.createElement("a")
+                      anchor.href = href
+                      anchor.download = "JohnRoyGeraldeResumeWithPortfolio.pdf"
+                      document.body.appendChild(anchor)
+                      anchor.click()
+                      anchor.remove()
+                      setCvDialogOpen(false)
+                    }}
+                  >
+                    Download
+                  </AlertDialogAction>
+                </AlertDialogFooter>
+              </AlertDialogContent>
+            </AlertDialog>
           </div>
         </div>
       </div>

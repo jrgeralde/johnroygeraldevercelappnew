@@ -75,7 +75,7 @@ export function BackToTop() {
   if (!visible) return null
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div className="fixed bottom-16 right-6 z-50">
       <Button
         type="button"
         variant="secondary"
