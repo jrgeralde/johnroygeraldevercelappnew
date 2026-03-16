@@ -11,7 +11,7 @@ export function Topbar() {
             <div className="size-[74px] shrink-0 overflow-hidden rounded-full ring-1 ring-border">
               <Image
                 src="/images/IDPIC.jpg"
-                alt="John Roy A. Geralde"
+                alt="John Roy Geralde"
                 width={74}
                 height={74}
                 className="h-full w-full object-cover"
@@ -19,7 +19,7 @@ export function Topbar() {
               />
             </div>
             <div className="min-w-0">
-              <h3 className="truncate text-2xl font-semibold text-foreground">John Roy A. Geralde</h3>
+              <h3 className="truncate text-2xl font-semibold text-foreground">John Roy Geralde</h3>
               <span className="block text-base leading-6 text-balance text-[color:color-mix(in_oklab,var(--brand)_70%,var(--foreground)_30%)]">
                 Senior Software Engineer / Full Stack Web Developer / Computer Science Instructor
               </span>

@@ -44,7 +44,7 @@ export default function DashboardLayout({
                 >
                   <Link href="/myjobportfolio" aria-label="Open My Job Portfolio">
                     <BriefcaseBusiness className="size-4" aria-hidden />
-                    My Job Portfolio
+                    Job Portfolio
                   </Link>
                 </Button>
                 <Button
@@ -53,7 +53,7 @@ export default function DashboardLayout({
                 >
                   <Link href="/mycertificates" aria-label="Open My Certificates">
                     <BadgeCheck className="size-4" aria-hidden />
-                    My Certificates
+                    Certificates
                   </Link>
                 </Button>
               </div>
