@@ -1,6 +1,7 @@
 "use client"
 
 import { FileDown, Github, Home, Linkedin, Mail, Youtube } from "lucide-react"
+import Image from "next/image"
 import { useState } from "react"
 import {
   AlertDialog,
@@ -23,53 +24,67 @@ export function WelcomeCard() {
       <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
         {/* Left Side (Text) */}
         <div className="max-w-xl md:w-3/5">
-          <div className="space-y-2 mt-10">
-            <p className="flex items-center gap-2">
-              <Home className="size-4 shrink-0" aria-hidden />
-              <span>Davao City, Philippines</span>
-            </p>
-            <p className="flex items-center gap-2">
-              <Mail className="size-4 shrink-0" aria-hidden />
-              <a
-                href="mailto:jrgeralde@gmail.com"
-                className="underline underline-offset-4 hover:opacity-90"
-              >
-                jrgeralde@gmail.com
-              </a>
-            </p>
-            <p>
-              <a
-                href="https://www.youtube.com/@roytek7667/playlists"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 underline underline-offset-4 hover:opacity-90"
-              >
-                <Youtube className="size-4 shrink-0 no-underline" aria-hidden />
-                My YouTube Channel
-              </a>
-            </p>
-            <p>
-              <a
-                href="https://www.linkedin.com/in/john-geralde-20141593/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 underline underline-offset-4 hover:opacity-90"
-              >
-                <Linkedin className="size-4 shrink-0 no-underline" aria-hidden />
-                My LinkedIn Profile
-              </a>
-            </p>
-            <p>
-              <a
-                href="https://jrageralde.github.io/ITC/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 underline underline-offset-4 hover:opacity-90"
-              >
-                <Github className="size-4 shrink-0 no-underline" aria-hidden />
-                My JavaScript GitHub Demos
-              </a>
-            </p>
+          <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:items-start">
+            <div className="shrink-0">
+              <div className="size-28 overflow-hidden rounded-full bg-white/10 ring-1 ring-white/20 md:size-36 lg:size-40 mr-5">
+                <Image
+                  src="/images/LOGO.png"
+                  alt="Logo"
+                  width={240}
+                  height={240}
+                  className="h-full w-full object-cover"
+                  priority
+                />
+              </div>
+            </div>
+            <div className="space-y-2">
+              <p className="flex items-center gap-2">
+                <Home className="size-4 shrink-0" aria-hidden />
+                <span>Davao City, Philippines</span>
+              </p>
+              <p className="flex items-center gap-2">
+                <Mail className="size-4 shrink-0" aria-hidden />
+                <a
+                  href="mailto:jrgeralde@gmail.com"
+                  className="underline underline-offset-4 hover:opacity-90"
+                >
+                  jrgeralde@gmail.com
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://www.youtube.com/@roytek7667/playlists"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 underline underline-offset-4 hover:opacity-90"
+                >
+                  <Youtube className="size-4 shrink-0 no-underline" aria-hidden />
+                  My YouTube Channel
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://www.linkedin.com/in/john-geralde-20141593/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 underline underline-offset-4 hover:opacity-90"
+                >
+                  <Linkedin className="size-4 shrink-0 no-underline" aria-hidden />
+                  My LinkedIn Profile
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://jrageralde.github.io/ITC/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 underline underline-offset-4 hover:opacity-90"
+                >
+                  <Github className="size-4 shrink-0 no-underline" aria-hidden />
+                  My JavaScript GitHub Demos
+                </a>
+              </p>
+            </div>
           </div>
         </div>
 
