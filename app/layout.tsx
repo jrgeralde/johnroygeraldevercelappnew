@@ -8,13 +8,55 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { Suspense } from "react"
 import { BackToTop } from "@/components/back-to-top"
 import { AutoColorTheme } from "@/components/color-theme"
+import Script from "next/script"
+
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "https://johnroygeralde.vercel.app")
+
+const canonicalUrl = siteUrl.endsWith("/") ? siteUrl.slice(0, -1) : siteUrl
 
 export const metadata: Metadata = {
-  title: "John Roy Geralde",
-  description: "This is a modern, customizable smart home dashboard built with Next.js, React, and Tailwind CSS. It provides a beautiful interface to monitor and control smart home devices, view statistics, manage user profiles, and more.",
+  metadataBase: new URL(canonicalUrl),
+  title: {
+    default: "Software Engineer, Full Stack Web Developer, Odoo Developer",
+    template: "%s | Software Engineer | Full Stack Web Developer | Odoo Developer",
+  },
+   description:
+    "A web site regarding John Roy Geralde, Senior Software Engineer, Fullstack Web Developer, Odoo Developer",
+  applicationName: "Job Portfolio",
   generator: "John Roy Geralde",
+  authors: [{ name: "John Roy Geralde" }],
+  creator: "John Roy Geralde",
   icons: {
     icon: "/images/portfolio.png",
+  },
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    url: "/",
+    title: "%s | Software Engineer | Full Stack Web Developer | Odoo Developer",
+   description:
+    "A web site regarding John Roy Geralde, Senior Software Engineer, Fullstack Web Developer, Odoo Developer",
+    siteName: "Software Engineer, Fullstack Web Developer, Odoo Developer",
+    locale: "en_US",
+    images: [
+      {
+        url: "/images/portfolio.png",
+        width: 512,
+        height: 512,
+        alt: "Software Engineer, Fullstack Web Developer, Odoo Developer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Software Engineer, Fullstack Web Developer, Odoo Developer",
+    description:
+    "A web site regarding John Roy Geralde, Senior Software Engineer, Fullstack Web Developer, Odoo Developer",
+    images: ["/images/portfolio.png"],
   },
 }
 
@@ -23,6 +65,33 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": `${canonicalUrl}/#website`,
+        url: canonicalUrl,
+        name: "Software Engineer, Fullstack Web Developer, Odoo Developer",
+        description: metadata.description,
+        inLanguage: "en",
+        publisher: {
+          "@type": "Person",
+          name: "John Roy Geralde",
+        },
+      },
+      {
+        "@type": "WebPage",
+        "@id": `${canonicalUrl}/#webpage`,
+        url: canonicalUrl,
+        name: "Software Engineer, Fullstack Web Developer, Odoo Developer",
+        description: metadata.description,
+        isPartOf: { "@id": `${canonicalUrl}/#website` },
+        inLanguage: "en",
+      },
+    ],
+  }
+
   return (
     <html
       lang="en"
@@ -32,6 +101,28 @@ export default function RootLayout({
       // Ensure a default brand so color theming is active before hydration.
       data-brand="blue"
     >
+      <head>
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-CBQQW5VFDF"
+        />
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){window.dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-CBQQW5VFDF');
+            `,
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="font-sans">
         <ThemeProvider>
           <Suspense fallback={null}>
