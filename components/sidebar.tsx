@@ -32,7 +32,7 @@ type Item = {
 }
 
 const items: Item[] = [
-  { href: "/", label: "Home", icon: Home },
+  { href: "/dashboard", label: "Home", icon: Home },
   { href: "/myjobportfolio", label: "My Job Portfolio", icon: BriefcaseBusiness },
   { href: "/mycertificates", label: "My Certificates", icon: GraduationCap },
   { href: "/security", label: "Download My CV", icon: FileDown },
