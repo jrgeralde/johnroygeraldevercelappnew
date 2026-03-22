@@ -21,7 +21,7 @@ export function Topbar() {
             <div className="min-w-0">
               <h3 className="truncate text-2xl font-semibold text-foreground">John Roy Geralde</h3>
               <span className="block text-base leading-6 text-balance text-[color:color-mix(in_oklab,var(--brand)_70%,var(--foreground)_30%)]">
-                Sr. Software Engineer / Fullstack Developer / Odoo Developer / Computer Science Instructor
+                Software Engineer / Fullstack Developer / Odoo Developer / Computer Science Instructor
               </span>
             </div>
           </div>
