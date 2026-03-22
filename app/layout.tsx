@@ -18,18 +18,17 @@ const canonicalUrl = siteUrl.endsWith("/") ? siteUrl.slice(0, -1) : siteUrl
 
 export const metadata: Metadata = {
   metadataBase: new URL(canonicalUrl),
-  title: {
-    default: "Software Engineer, Full Stack Web Developer, Odoo Developer",
-    template: "%s | Software Engineer | Full Stack Web Developer | Odoo Developer",
-  },
-   description:
+  title: "John Roy Geralde",
+  description:
     "A web site regarding John Roy Geralde, Senior Software Engineer, Fullstack Web Developer, Odoo Developer",
   applicationName: "Job Portfolio",
   generator: "John Roy Geralde",
   authors: [{ name: "John Roy Geralde" }],
   creator: "John Roy Geralde",
   icons: {
-    icon: "/images/portfolio.png",
+    icon: [{ url: "/images/portfolio.png", type: "image/png" }],
+    shortcut: "/images/portfolio.png",
+    apple: "/images/portfolio.png",
   },
   alternates: {
     canonical: "/",
@@ -37,23 +36,23 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "/",
-    title: "%s | Software Engineer | Full Stack Web Developer | Odoo Developer",
-   description:
+    title: "John Roy Geralde",
+    description:
     "A web site regarding John Roy Geralde, Senior Software Engineer, Fullstack Web Developer, Odoo Developer",
-    siteName: "Software Engineer, Fullstack Web Developer, Odoo Developer",
+    siteName: "John Roy Geralde",
     locale: "en_US",
     images: [
       {
         url: "/images/portfolio.png",
         width: 512,
         height: 512,
-        alt: "Software Engineer, Fullstack Web Developer, Odoo Developer",
+        alt: "John Roy Geralde",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Software Engineer, Fullstack Web Developer, Odoo Developer",
+    title: "John Roy Geralde",
     description:
     "A web site regarding John Roy Geralde, Senior Software Engineer, Fullstack Web Developer, Odoo Developer",
     images: ["/images/portfolio.png"],
