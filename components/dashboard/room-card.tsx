@@ -21,7 +21,7 @@ export function RoomCard(_: { title: string }) {
         <div className="rounded-lg border border-border bg-background p-4 shadow-sm transform hover:scale-105 transition-transform duration-200">
           <h5 className="flex items-start gap-2 font-semibold text-foreground">
             <Cog className="mt-0.5 size-4 shrink-0 text-brand" aria-hidden />
-            <span>Senior Software Engineer / Full Stack Web Developer / Software Systems Expert</span>
+            <span>Senior Software Engineer / Full Stack Web Developer / Odoo Developer</span>
           </h5>
           <h6 className="mt-2 flex items-start gap-2 text-sm text-muted-foreground">
             <CalendarDays className="mt-0.5 size-4 shrink-0 text-muted-foreground" aria-hidden />
@@ -87,7 +87,7 @@ export function RoomCard(_: { title: string }) {
             <span>2021 - Present</span>
           </h6>
           <p className="mt-4 mb-1.5 text-sm text-foreground">
-            Instructional Videos on History of Computing, Boolean Logic and Circuitverse, Assembly Language Programming, Database Desktop Development using C#, Introduction to Javascript, HTML and CSS.{" "}
+            Instructional Videos on Odoo Development, History of Computing, Boolean Logic and Circuitverse, Assembly Language Programming, Database Desktop Development using C#, Introduction to Javascript, HTML and CSS.{" "}
             <span className="font-semibold">Youtube channel:</span>{" "}
             <a
               href="https://www.youtube.com/@roytek7667/playlists"
