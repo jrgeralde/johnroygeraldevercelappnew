@@ -16,7 +16,7 @@ export function AirConditioning() {
           <h3 className="text-sm font-semibold text-foreground">My Services</h3>
         </div>
 
-        <ul className="mt-4 space-y-2 text-sm text-foreground">
+        <ul className="mt-4 space-y-2 text-sm font-semibold text-foreground">
           <li>✔ Odoo Development and Customization</li>
           <li>✔ Odoo Installation (On-Premise and Cloud)</li>
           <li>✔ Legacy System Modernization (C#, Delphi to Web)</li>
