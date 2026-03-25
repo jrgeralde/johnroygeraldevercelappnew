@@ -17,11 +17,11 @@ export default function MyJobPortfolioPage() {
             <h2 className="mb-2 text-xl font-semibold">
               1. Hotel Guest Reservation, Registration, Billing and Collection System
             </h2>
-            <p className="mb-2 text-sm text-gray-700">
+            <p className="mb-2 text-sm text-gray-700 dark:text-white">
               A python web app developed in Odoo 19 Community Edition and PostgreSQL. It is used by the hotel concierge
               to reserve rooms, accept guests, make regular room bills, and collect guest payments.
             </p>
-            <p className="mb-2 text-sm text-gray-700">
+            <p className="mb-2 text-sm text-gray-700 dark:text-white">
               <span className="font-semibold">My Role:</span> Sole Full Stack Developer
             </p>
 
@@ -76,12 +76,12 @@ export default function MyJobPortfolioPage() {
 
           <article className="mt-4 mb-4 rounded-lg bg-white p-4 shadow border-2 border-gray-500/20 transform hover:scale-105 transition-transform duration-200">
             <h2 className="mb-2 text-xl font-semibold">2. Student Registration, Billing and Collection System</h2>
-            <p className="mb-2 text-sm text-gray-700">
+            <p className="mb-2 text-sm text-gray-700 dark:text-white">
               The revenue component of a school management system used to generate student bills upon enrollment, collect
               payments, and make corresponding adjustments for discounts and scholarships. It generates student
               registration summaries and cash collection and adjustments. The database backend is MS SQL server.
             </p>
-            <p className="mb-2 text-sm text-gray-700">
+            <p className="mb-2 text-sm text-gray-700 dark:text-white">
               <span className="font-semibold">My Role:</span> Sole Developer
             </p>
 
@@ -138,12 +138,12 @@ export default function MyJobPortfolioPage() {
         <div className="w-full rounded-lg bg-white p-4 shadow md:w-[50%]">
           <article className="mt-4 mb-4 rounded-lg bg-white p-4 shadow border-2 border-gray-500/20 transform hover:scale-105 transition-transform duration-200">
             <h2 className="mb-2 text-xl font-semibold">3. Wharf Operation System</h2>
-            <p className="mb-2 text-sm text-gray-700">
+            <p className="mb-2 text-sm text-gray-700 dark:text-white">
               A windows desktop application designed to support wharf operations including inventory management,
               disbursements and payments, cash receipts, accounts receivables and payables, adjustments, and other
               journal adjustments. The database backend is My SQL.
             </p>
-            <p className="mb-2 text-sm text-gray-700">
+            <p className="mb-2 text-sm text-gray-700 dark:text-white">
               <span className="font-semibold">My Role:</span> Sole Developer
             </p>
 
@@ -222,12 +222,12 @@ export default function MyJobPortfolioPage() {
 
           <article className="mt-4 mb-4 rounded-lg bg-white p-4 shadow border-2 border-gray-500/20 transform hover:scale-105 transition-transform duration-200">
             <h2 className="mb-2 text-xl font-semibold">4. Company Payroll System</h2>
-            <p className="mb-2 text-sm text-gray-700">
+            <p className="mb-2 text-sm text-gray-700 dark:text-white">
               A windows desktop app used to generate semi monthly payroll based on an employee 201 list. It also uses
               lookup tables to compute government required premiums. It has an email facility to send individual payslips
               by email. The database backend is My SQL.
             </p>
-            <p className="mb-2 text-sm text-gray-700">
+            <p className="mb-2 text-sm text-gray-700 dark:text-white">
               <span className="font-semibold">My Role:</span> Sole Developer
             </p>
 
