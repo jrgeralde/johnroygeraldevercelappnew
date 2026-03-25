@@ -27,7 +27,7 @@ export function Topbar() {
               <h3 className="truncate text-2xl font-semibold text-foreground">John Roy Geralde</h3>
               <span className="block text-base leading-6 text-balance text-[color:color-mix(in_oklab,var(--brand)_70%,var(--foreground)_30%)]">
                 {/* Software Engineer / Fullstack Developer / Odoo Developer / Computer Science Instructor */}
-                Odoo Developer and Fullstack Web Developer Serving USA, Australia and International Clients
+                Senior Odoo Developer and Fullstack Web Developer Serving USA, Australia and International Clients
               </span>
             </div>
           </div>
