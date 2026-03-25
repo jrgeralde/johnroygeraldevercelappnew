@@ -31,7 +31,7 @@ export function RoomCard(_: { title: string }) {
             Highly skilled software development professional bringing talents for software design, development and integration. Offering advanced knowledge of in-demand programming languages. Gained extensive background in writing code and developing software solutions to various local industry clients.
           </p> */}
           <p className="mt-1.5 mb-1.5 text-sm font-semibold text-foreground">
-            Senior Software Engineer with over 30 years of experience developing business software, ERP systems, and web applications.
+            Senior Software Engineer with 30 years of experience developing business software, ERP systems, and web applications.
           </p> 
           <p className="mt-1.5 mb-1.5 text-sm font-semibold text-foreground">
             Specializes in:
@@ -48,7 +48,7 @@ export function RoomCard(_: { title: string }) {
              Helps businesses modernize their operations, automate workflows, and build scalable software solutions.            
            </p>
            <p className="mt-4 mb-1.5 text-sm text-foreground">
-             Based in the Philippines — Serving Clients in the United States, Australia  and Other Countries.
+             Based in the Philippines — Serving Clients in the United States, Australia and Other Countries.
            </p> 
 
           {/* <p className="mt-1.5 mb-1.5 text-sm font-semibold text-foreground">
