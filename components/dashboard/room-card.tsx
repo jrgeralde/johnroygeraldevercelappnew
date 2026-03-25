@@ -27,31 +27,54 @@ export function RoomCard(_: { title: string }) {
             <CalendarDays className="mt-0.5 size-4 shrink-0 text-muted-foreground" aria-hidden />
             <span>1996 - Present</span>
           </h6>
-          <p className="mt-4 mb-1.5 text-sm text-foreground">
+          {/* <p className="mt-4 mb-1.5 text-sm text-foreground">
             Highly skilled software development professional bringing talents for software design, development and integration. Offering advanced knowledge of in-demand programming languages. Gained extensive background in writing code and developing software solutions to various local industry clients.
-          </p>
+          </p> */}
           <p className="mt-1.5 mb-1.5 text-sm font-semibold text-foreground">
-            Practices Exemplary Work Ethic. Strives to exceed expectations and Prioritizes meeting deadlines without supervision. Aggressive yet cheerful with colleagues.
-          </p>
+            Senior Software Engineer with over 30 years of experience developing business software, ERP systems, and web applications.
+          </p> 
           <p className="mt-1.5 mb-1.5 text-sm font-semibold text-foreground">
+            Specializes in:
+           
+           </p> 
+           <ul className="mt-4 space-y-2 text-sm font-semibold text-foreground">
+            <li>• Odoo ERP Development and Customization</li>
+            <li>• Modernizing Legacy Systems</li>
+            <li>• Fullstack Web Development using React, NextJS and PostgreSQL</li>
+            <li>• Database Design and Administration and High-Availability Systems</li>
+            <li>• Linux Server Deployment</li>            
+           </ul> 
+           <p className="mt-4 mb-1.5 text-sm text-foreground" >
+             Helps businesses modernize their operations, automate workflows, and build scalable software solutions.            
+           </p>
+           <p className="mt-4 mb-1.5 text-sm text-foreground">
+             Based in the Philippines — Serving Clients in the United States, Australia  and Other Countries.
+           </p> 
+
+          {/* <p className="mt-1.5 mb-1.5 text-sm font-semibold text-foreground">
+            Practices Exemplary Work Ethic. Strives to exceed expectations and Prioritizes meeting deadlines without supervision.
+              Aggressive yet cheerful with colleagues.
+          </p> */}
+          {/* <p className="mt-1.5 mb-1.5 text-sm font-semibold text-foreground">
             Constantly Updates and Trains on Recent Developments on Technologies and Platforms, well trained in ReactJs,NextJs,GraphQL and Odoo.
-          </p>
-          <p className="mt-1.5 mb-1.5 text-sm font-semibold text-foreground">
+          </p> */}
+          {/* <p className="mt-1.5 mb-1.5 text-sm font-semibold text-foreground">
             Specializes in Modernizing Legacy Systems, having wide experience in developing desktop and web solutions in Delphi, Unigui, NodeJS, Python and C#.
-          </p>
-          <p className="mt-1.5 mb-1.5 text-sm text-foreground">
+          </p> */}
+          {/* <p className="mt-1.5 mb-1.5 text-sm text-foreground">
             Provides support for software systems and customization of software solutions.
-          </p>
-          <p className="mt-1.5 mb-1.5 text-sm text-foreground">
+          </p> */}
+          {/* <p className="mt-1.5 mb-1.5 text-sm text-foreground">
             An experienced Database Administrator with actual experience in Windows Server Failover Clustering and Replication.
-          </p>
-          <p className="mt-1.5 mb-1.5 text-sm text-foreground">
+          </p> */}
+          
+          <p className="mt-2.5 mb-1.5 text-sm text-foreground">
             Regularly practices vibe coding using Cursor AI, Trae AI and other Github Copilot AI coding agents.
           </p>
-          <p className="mt-1.5 mb-1.5 text-sm text-foreground">An avid user of Linux and Ubuntu.</p>
+          {/* <p className="mt-1.5 mb-1.5 text-sm text-foreground">An avid user of Linux and Ubuntu.</p>
           <p className="mt-1.5 mb-1.5 text-sm font-semibold text-foreground">
             Underwent training in CRM Using Go High Level (GHL)
-          </p>
+          </p> */}
         </div>
 
         <div className="rounded-lg border border-border bg-background p-4 shadow-sm transform hover:scale-105 transition-transform duration-200">
@@ -72,9 +95,9 @@ export function RoomCard(_: { title: string }) {
           <p className="mt-1.5 mb-1.5 text-sm text-foreground">
             Mentors students, fostering a collaborative learning environment that promotes innovation and knowledge sharing on various projects with industry partners.
           </p>
-          <p className="mt-1.5 mb-1.5 text-sm font-semibold text-foreground">
+          {/* <p className="mt-1.5 mb-1.5 text-sm font-semibold text-foreground">
             Maintains very high standard in delivering classes. Very rarely late in coming to class. And never been absent for years. Informs students early when class is not possible and very earnest in granting grade consultations so students can protest, complain or have grades corrected.
-          </p>
+          </p> */}
         </div>
 
         <div className="rounded-lg border border-border bg-background p-4 shadow-sm transform hover:scale-105 transition-transform duration-200">
