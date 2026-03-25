@@ -24,7 +24,7 @@ export function AirConditioning() {
           <li>✔ Database Design and Optimization</li>
           <li>✔ API Development and Integration</li>
           <li>✔ ERP Implementation for Medium and Small Businesses</li>
-          <li>✔ Technical Support & Training for Software Systems,CRM,Automation & AI assisted Work Tools</li>
+          <li>✔ Technical Support & Training for Software Systems, CRM,Automation & AI assisted Work Tools</li>
           <li>✔ Linux Server Deployment</li>          
 
         </ul>
